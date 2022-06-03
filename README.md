@@ -5,7 +5,7 @@
 I created a nice chunk of CSS code to go along with the HTML I've created as a solution to this assignment and having all of that work go to waste just doesn't make for a productive choice. So I'm utilizing Github Pages as a means of displaying this assignment. Check it out!
 
 
-# Your Assignment
+## Your Assignment
 
 1. Review the tutorial link sections from the left Menu HTML Basic through HTML Tables to learn HTML concepts.  These sections will give you enough information to complete the assignment.  You should do them in order so that each builds more knowledge upon the previous topic.
 
