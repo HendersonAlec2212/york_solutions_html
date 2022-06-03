@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+          
+      <title>York Solutions Assignment 1, HTML.</title>    
+
+    </head>
+
+    <header class="background-black; centered-text">
+        <div>
+            <h1 class="darkblue"> My First HTML Page </h1>
+        </div>
+    </header>
+
+    <hr>
+
+    <body class="background-black">
+        <div class="navbar">
+            <div>
+                <span id="navbar-title">Check out my Favorite...</span>
+            </div>
+        <div class="navbar-link">
+            <div class="navb-link">
+                <button class="drop-button"><a href="https://docs.google.com/document/d/1cQYjDQTbvnHSEl-pVwztKaJU-c_vTxXw31knR891fC0/edit?usp=sharing" target="_blank">Soup Recipe</a></button>
+            </div>
+            
+            <div class="navb-link">
+                <button class="drop-button"><a href="https://github.com/HendersonAlec2212/data_compilation_visualization#:~:text=in%20the%20future-,.,-Conclusion" target="_blank">Github project</a></button>
+            </div>
+            
+            <div class="navb-link">
+                <button class="drop-button"><a href="https://www.youtube.com/c/Taskmaster/playlists" target="_blank">Game Show</a></button>
+            </div>
+
+            <div class="navb-link">
+                <button class="drop-button"><a href="https://www.imdb.com/title/tt0446029/" target="_blank"> Movie/Film </a></button>
+            </div>
+
+            <div class="navb-link dropdown">
+                <button class="drop-button" onclick="toggle_passtimes()">Pass-Times</button>
+                <div class="dropdown-content" id="passtimes-dropdown">
+                    <li><a href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"> Video Game</a></li>
+                    <hr class="thin-white">
+                    <li><a href="https://boardgamegeek.com/boardgame/146508/time-stories"> Board Game</a></li> 
+                    <hr class="thin-white">
+                    <li><a href="https://magic.wizards.com/en"> Card Game </a></li>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+        <article class="background-black col-md-10 container">
+
+            <div class="background-light-grey border-white">
+                <p class=" centered-text">
+                    Computers and Technology has always been things that I've enjoyed. Learning how something works is a joy reguardless to how frustrating solutions to issues can be in the moments leading to a discovery/solution. Using the button above, I've linked some favorite things covering all areas of entertainment. Check them out!
+                </p>
+            </div>
+
+            <hr class="white">
+
+            <div style="padding: 0% 0%;" class="center-img-container">
+                <a href="https://yorkdevtraining.com/images/york-solutions/Swimming-in-Mammoth-Lakes.jpg" target="_blank"><img style="margin: 0% 5% 0% 0%" width="300" height="200" src="https://yorkdevtraining.com/images/york-solutions/Swimming-in-Mammoth-Lakes.jpg" alt="Random Woman In a lake" class="" ></a> 
+                <a href="https://yorkdevtraining.com/images/york-solutions/pexels-photo-247600.jpeg" target="_blank"><img style="margin: 0% 0% 0% 5%" width="300" height="200" src="https://yorkdevtraining.com/images/york-solutions/pexels-photo-247600.jpeg" alt="Lake with woods" class="" ></a> 
+                <hr class="white">
+            </div>
+
+            <div class="background-light-grey border-white table-responsive">
+                <table border="1" class="dataframe table">
+                    <thead>
+                      <tr>
+                        <th colspan="5" class="centered-text">Preliminary Cast of Scott Pilgrim vs The World</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>FIRSTNAME:</td>
+                        <th>LASTNAME:</td>
+                        <th>CITY:</td>
+                        <th>STATE:</td>
+                        <th>BIRTH MONTH:</td>
+                      </tr>
+                      <tr>
+                        <td>MICHAEL</td>
+                        <td>CERA</td>
+                        <td>BRAMPTON</td>
+                        <td>ONTARIO</td>
+                        <td>JUNE</td>
+                      </tr>
+                      <tr>
+                        <td>MARY</td>
+                        <td>WINSTEAD</td>
+                        <td>ROCKY MOUNTAIN</td>
+                        <td>NORTH CAROLINA</td>
+                        <td>NOVEMBER</td>
+                      </tr>
+                      <tr>
+                        <td>KIERAN</td>
+                        <td>CULKIN</td>
+                        <td>NEW YORK</td>
+                        <td>NEW YORK</td>
+                        <td>SEPTEMBER</td>
+                      </tr>
+                      <tr>
+                        <td>CHRIS</td>
+                        <td>EVANS</td>
+                        <td>BOSTON</td>
+                        <td>MASSACHUSETTS</td>
+                        <td>JUNE</td>
+                      </tr>
+                      <tr>
+                        <td>AUBREY</td>
+                        <td>PLAZA</td>
+                        <td>WILMINGTON</td>
+                        <td>DELAWARE</td>
+                        <td>JUNE</td>
+                      </tr>
+                      <tr>
+                        <td>BRIE</td>
+                        <td>LARSON</td>
+                        <td>SACRAMENTO</td>
+                        <td>CALIFORNIA</td>
+                        <td>OCTOBER</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+
+        </article>
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function toggle_passtimes() {
+              document.getElementById("passtimes-dropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.drop-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+
+    </body>
+        
+
+</html>

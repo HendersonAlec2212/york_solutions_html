@@ -1,0 +1,190 @@
+/*https://www.w3schools.com/css/css3_fonts.asp*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+
+p {
+    font-size: 18pt;
+    margin: 0% 10%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+/* ---------------------------------------------------- COLORS ---------------------------------------------------- */
+
+/* --------------- FONTS --------------- */
+
+.darkblue{
+    color: rgb(31, 59, 214);
+}
+.lightblue{
+    color: lightskyblue;
+}
+.white{
+    color: white;
+}
+/* --------------- BACKGROUND --------------- */
+.background-black{
+    background-color: black;
+}
+
+.background-dark-grey {
+    background-color: rgb(73, 73, 73);
+}
+
+.background-light-grey {
+    background-color: rgb(189, 189, 189);
+}
+
+/* --------------- BORDERS --------------- */
+
+.border-white{
+    border: white solid 4pt;
+}
+
+/* --------------- PAGE SEPARATORS --------------- */
+hr.white{
+    border:2px solid white;
+    border-radius: 3px;
+}
+
+/* ---------------------------------------------------- END COLORS ---------------------------------------------------- */
+
+/* ---------------------------------------------------- IMAGE ---------------------------------------------------- */
+.img-half-size{
+    height: auto;
+    max-width: 50%;
+}
+img:hover {
+    opacity: 70%;
+}
+
+.center-img-container {
+    max-width: 100%;
+    text-align: center;
+}
+/* ---------------------------------------------------- END IMAGE ---------------------------------------------------- */
+/* ---------------------------------------------------- NAVBAR ---------------------------------------------------- */
+
+
+.navbar{ 
+    /* wanted a container to be the length of the available area and a nice height for the page*/
+    width:98%; /* this in combo with top and left positional attributes allows for a nice black border supplied from the back ground */
+    height: 5%;
+    background-color: rgb(43, 41, 41);
+    position: absolute; /* I chose absolute because I wanted it to exist outside of the regular document flow so that it will always be on top closest its ancestor*/
+    top: 0%;
+    left: 1%;
+    padding: 2.5% 5% 1.5% 5%; /* I have these padding percentages set up to force an even distribution of the button elements across the page, keeping space on the "outsides" of the Home and Last Link Box */
+    font-size: 20pt;
+    border: 3pt solid white;
+}
+
+.drop-button{
+    background-color: skyblue;
+    color: black;
+    border-radius: 2px;
+    padding: 5px;
+    height: 100%;
+    border: 1px solid black;
+    
+}
+.drop-button a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: auto;    
+
+}
+
+.navbar-link {
+    /* this class exists to contain the links for the nav bar across the screen */ 
+    display: flex; /* this allows the elements in the box containing the links to resize to fit the page*/
+    flex-wrap: nowrap; /* this keeps the elements in nav bar in one even line */
+    height: 100%;
+    max-width: 70%;
+    min-width: 20%;
+}
+.navbar-link > div{
+    /* this class sets the characteristics of the link boxes in the nav bar */
+    width: 175px;
+    margin: 2px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0%;
+}
+.navb-link a {
+    /* this class sets the properties of the link-text in the nav bar */
+    color: rgb(0, 0, 0);
+    text-decoration: none; /* this is to remove the underline given to the Link buttons */
+
+}
+
+.navb-link a:hover, .navb-link button:hover {
+    color: rgb(255, 255, 255);
+}
+
+#navbar-title {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none; /* this is to remove the underline given to the Home button */
+    height: 60px;
+    /* padding: 10% 20% 10% 20%; */
+
+}
+
+
+.dropdown {
+    /* this exists to add properties to the dropdown links on Hover */
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute; /* this removes this element from the normal document flow, preventing the navbar from loading the dropdown menu before its Hovered */
+    background-color: rgb(63, 61, 61);
+    min-width: 160px;
+    padding: 6px 2px;
+    z-index: 1;
+    font-size: 12pt;
+    border: 3px solid rgb(224, 224, 224);
+}
+
+.dropdown-content hr{
+    border-top: 1px solid white;
+}
+.dropdown-content a{
+    color: lightskyblue;
+}
+
+.show {display: block;}
+
+/* ---------------------------------------------------- END NAVBAR ---------------------------------------------------- */
+
+/*---------------------------------------------------- TABLE ---------------------------------------------------- */
+
+table {
+    font-size: 14pt;
+}
+
+tr:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+
+
+}
+
+/*---------------------------------------------------- END TABLE ---------------------------------------------------- */
